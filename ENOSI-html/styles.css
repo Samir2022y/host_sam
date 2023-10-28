@@ -145,7 +145,7 @@ form {
 
 
 @media (max-width: 870px) {
-  .container {
+  .containere {
     min-height: 800px;
     height: 100vh;
   }
@@ -196,7 +196,7 @@ form {
 
   
 
-  .container:before {
+  .containere:before {
     width: 1500px;
     height: 1500px;
     transform: translateX(-50%);
@@ -207,19 +207,19 @@ form {
     transition: 2s ease-in-out;
   }
 
-  .container.sign-up-mode:before {
+  .containere.sign-up-mode:before {
     transform: translate(-50%, 100%);
     bottom: 32%;
     right: initial;
   }
 
-  .container.sign-up-mode .left-panel .image,
-  .container.sign-up-mode .left-panel .content {
+  .containere.sign-up-mode .left-panel .image,
+  .containere.sign-up-mode .left-panel .content {
     transform: translateY(-300px);
   }
 
-  .container.sign-up-mode .right-panel .image,
-  .container.sign-up-mode .right-panel .content {
+  .containere.sign-up-mode .right-panel .image,
+  .containere.sign-up-mode .right-panel .content {
     transform: translateY(0px);
   }
 
@@ -228,7 +228,7 @@ form {
     transform: translateY(300px);
   }
 
-  .container.sign-up-mode .signin-signup {
+  .containere.sign-up-mode .signin-signup {
     top: 5%;
     transform: translate(-50%, 0);
   }
@@ -245,11 +245,11 @@ form {
   .panel .content {
     padding: 0.5rem 1rem;
   }
-  .container {
+  .containere {
     padding: 1.5rem;
   }
 
-  .container:before {
+  .containere:before {
     bottom: 72%;
     left: 50%;
   }
@@ -257,7 +257,7 @@ form {
   .reset-password-box{
     padding-bottom: 10rem;
   }
-  .container.sign-up-mode:before {
+  .containere.sign-up-mode:before {
     bottom: 28%;
     left: 50%;
   }
