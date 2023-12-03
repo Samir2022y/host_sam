@@ -27,6 +27,8 @@
 </head>
 
 <body>
+
+    
   <div class="hero_area">
     <!-- header section strats -->
     <header class="header_section">
@@ -63,6 +65,9 @@
         </div>
       </div>
     </header>
+      <div id="changingText">
+  WELCOME....
+</div>
     <!-- end header section -->
     <!-- slider section -->
     <section class="slider_section ">
@@ -145,40 +150,47 @@
   <!-- end feature section -->
 
   <!-- about section -->
-
-  <section class="about_section layout_padding-bottom" id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-5 col-md-6">
-          <div class="detail-box">
-            <h2>
-              About us
-            </h2>
-            <p class="samir">
-              At ENOSI, we're your trusted partner for a wide range of home services. Our team of skilled 
+<section class="about_section layout_padding-bottom" id="about">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-5 col-md-6">
+        <div class="detail-box">
+          <h2>About us</h2>
+          <p class="samir">
+        At ENOSI, we're your trusted partner for a wide range of home services. Our team of skilled 
               professionals specializes in electrical, plumbing, repairs, and more, offering a one-stop 
               solution to maintain and elevate your home. We're on a mission to provide top-quality services 
               that enhance your living environment's comfort and convenience. With years of industry experience, we
                take pride in our commitment to customer satisfaction, punctuality, and reliability. Whether it's 
                a leaky faucet, an electrical upgrade, or general repairs, we're here to make your
                home better, one service at a time. Partner with ENOSI to transform your living space.
-            </p>
-            <a href="./services.html">
-              Read More
-            </a>
-          </div>
+            
+          </p>
+          <a href="./services.html">Read More</a>
         </div>
-        <div class="col-lg-7 col-md-6">
-          <div class="img-box">
-            <img src="images/about-img.jpg" alt="">
-          </div>
+      </div>
+      <div class="col-lg-7 col-md-6">
+        <div class="img-box">
+          <div class="slideshow-container">
+            <div class="mySlides">
+              <img src="images/about-img1.jpg" alt="">
+            </div>
+            <div class="mySlides">
+              <img src="images/about-img2.jpg" alt="">
+            </div>
+            <div class="mySlides">
+              <img src="images/about-img3.jpg" alt="">
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>
+
+
+
 <!-- end about section -->  
 <!-- contact section -->
- <section class="contact_section layout_padding">
+ <section class="contact_section layout_padding"  >
     <div class="container">
       <div class="heading_container">
         <h2>
@@ -187,25 +199,26 @@
       </div>
       <div class="row">
         <div class="col-md-6">
-          <form action="">
+          <form action="" method="" id="contactForm" id="contact">
             <div>
-              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Name" name="qqqq" id="samir" />
             </div>
             <div>
-              <input type="text" placeholder="Phone Number" />
+              <input type="text" placeholder="Phone Number"  id="samir1"/>
             </div>
             <div>
-              <input type="email" placeholder="Email" />
+              <input type="email" placeholder="Email" id="samir2" />
             </div>
             <div>
-              <input type="text" class="message-box" placeholder="Message" />
+              <input type="text" class="message-box" placeholder="Message" id="samir3" />
             </div>
             <div class="d-flex ">
-              <button>
+              <button id="check">
                 SEND
               </button>
             </div>
           </form>
+              <small id="validationMessage"></small>
         </div>
         <div class="col-md-6">
           <div class="map_container">
@@ -222,7 +235,7 @@
 
 
   <!-- info section -->
-  <section class="info_section " id="contact">
+  <section class="info_section ">
     <div class="container">
       <h4>
         Get In Touch
@@ -316,7 +329,7 @@
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCh39n5U-4IoWpsVGUHWdqB6puEkhRLdmI&callback=myMap"></script>
   <!-- End Google Map -->
 
-
+ <script src="./app.js"></script>
 </body>
 
 </html>

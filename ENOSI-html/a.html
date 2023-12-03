@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <style>
+    :root {
+      --background-color-light: #f8f8f8;
+      --background-color-dark: #000000;
+      --text-color-light: #000000;
+      --text-color-dark: #ffffff;
+    }
+
+    body {
+      background-color: var(--background-color-light);
+      color: var(--text-color-light);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    button {
+      background-color: var(--background-color-dark);
+      color: var(--text-color-dark);
+      border: none;
+      border-radius: 5px;
+      padding: 5px 10px;
+      cursor: pointer;
+      z-index: 1;
+    }
+
+    .ball {
+      width: 50px;
+      height: 50px;
+      background-color: #ffcc00;
+      border-radius: 50%;
+      position: absolute;
+      transition: transform 0.3s ease;
+    }
+
+    .ball.dark {
+      transform: translateX(50px);
+    }
+  </style>
+</head>
+<body>
+  <button id="toggle-mode">Toggle Mode</button>
+  <div class="ball"></div>
+
+  <script>
+    const toggleModeButton = document.getElementById('toggle-mode');
+    const ball = document.querySelector('.ball');
+
+    toggleModeButton.addEventListener('click', () => {
+      document.body.classList.toggle('dark-mode');
+      ball.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>

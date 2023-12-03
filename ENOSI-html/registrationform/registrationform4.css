@@ -1,0 +1,9 @@
+.body{
+    background-image: url('images/background');
+    background-size: cover; /* Adjust as needed */
+    background-position: center; /* Adjust as needed */
+    background-repeat: no-repeat;
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+

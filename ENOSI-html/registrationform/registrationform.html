@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Information Form</title>
+    <link rel="stylesheet" href="registrationform.css">
+    
+</head>
+<body>
+<main>
+    <div class="image-section">
+        <h1>Congratulations! </h1>
+        <h2>You have officially joined the ENOSI community. <br>
+            Please provide your information to complete <br>
+            the validation process for your membership.
+        </h2>
+        <img src="images/professional-img.png" class="principle-image">
+    </div>
+    <div id="form-section" class="form-section">
+        <h2>Personal information</h2>
+        <form>
+        <label for="First_Name">First Name</label>
+        <input type="text" name="First_Name" id="First_Name" size="15" maxlength="30" autocomplete="off" required /><br />
+        <label for="Last_Name">Last Name</label>
+        <input type="text" name="Last_Name" id="Last_Name" size="15" maxlength="30" autocomplete="off" required /><br />
+        <label for="NIN">National Identity Number</label>
+        <input type="text" name="NIN" id="NIN" size="15" maxlength="30" autocomplete="off"
+            required /><br />
+        <label for="Confirm_NIN">Confirm National Identity Number</label>
+        <input type="text" name="Confirm_NIN" id="Confirm_NIN" size="15" maxlength="30"
+            autocomplete="off" required /><br />
+        <label for="Birthdate">Date of Birth</label>
+        <input type="date" name="Birthdate" id="Birthdate" size="15" maxlength="30" autocomplete="off"
+            required /><br />
+        <label for="gender">Gender</label>
+        <div class="gender" id="gender">
+            <table>
+            <td><input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label></td>
+                <td><input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label></td>
+        </table>
+        </div>
+        <label for="image">Your Photo</label>
+        <input type="file" id="image" name="image" accept="image/*">
+
+        
+        <div class="arrow">
+        <a  type="submit" value="Submit" id="Submit_Btn" href="registrationForm2.html"> 
+            <img src="images/arrow (2).png" alt="Next Page">
+        </a>
+    </div>
+        <small></small>
+        </form>
+    </div>
+</main>
+<script src="registrationform.js" ></script>
+</body>
+</html>

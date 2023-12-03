@@ -18,6 +18,8 @@
   <link href="css/responsive.css" rel="stylesheet" />
   <!-- younesss css-->
   <link rel="stylesheet" href="ask.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
 </head>
 <body>
         <div class="hero_area">
@@ -57,16 +59,13 @@
               </div>
     </header>
     <main>
-
-        <div class="search">
-            <form action="/search" method="get">
-                <input type="text" name="q" placeholder="Search...">
-                <button type="submit">Search</button>
-            </form>
-        </div>
-    </header>
-    <p>for exmaple you find a worker so go to profil <a href="./profil.html">click</a></p>
-    <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d25597.42875461146!2d2.8365658393988182!3d36.68222809278845!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x128fa3f55b6a0985%3A0x1d61bb6722fd81fd!2sSidi%20Abdella%2C%20Mahelma!5e0!3m2!1sen!2sdz!4v1697753179108!5m2!1sen!2sdz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  <div class="search-container">
+    <input id="locationInput" class="search-input" type="text" placeholder="Enter Your Location" />
+    <button class="search-button" onclick="searchPlumbers()">Search</button>
+  </div>
+  <div id="map"></div>
+ 
+ 
     </main>
     <footer><section class="info_section " id="contact">
         <div class="container">
@@ -157,6 +156,11 @@
       <script src="js/bootstrap.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
       </script>
-      <script src="js/custom.js"></script></footer>
+      <script src="js/custom.js"></script>
+    <!-- Replace YOUR_API_KEY with your actual Google Maps API key -->
+<script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY"></script>
+<script src="ask.js"></script>
+
+    </footer>
 </body>
 </html>

@@ -6,15 +6,15 @@
 *::after {
   box-sizing: border-box;
 }
-.color{
-  background-color:#b0d1ed;
-}
- 
   .mx-auto {
     margin-left: auto;
     margin-right: auto;
   }
 
+
+cursor-pointer{
+   cursor:pointer;
+}
 .bg-light {
     background-color:rgb(250,250,250); 
  
@@ -23,6 +23,9 @@
   text-decoration:none;
 }
 
+#color{
+  color:blue;
+}
 
 body {
    margin: 0;
@@ -76,9 +79,35 @@ p {
   margin-bottom: 1rem;
 }
 
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted;
+  cursor: help;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+}
+ 
+pre {
+  display: block;
+  margin-top: 0;
+  margin-bottom: 1rem;
+  overflow: auto;
+  font-size: 0.875em;
+}
+pre code {
+  font-size: inherit;
+  color: inherit;
+  word-break: normal;
+}
 
-
-
+code {
+  font-size: 0.875em;
+  color: var(--bs-code-color);
+  word-wrap: break-word;
+}
+a > code {
+  color: inherit;
+}
 
 label {
   display: inline-block;
@@ -98,6 +127,12 @@ input
 
 
 
+fieldset {
+  min-width: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
 
 
 @media (min-width: 1200px) {
@@ -139,6 +174,25 @@ input
 
 
 
+
+
+.blockquote {
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+}
+.blockquote > :last-child {
+  margin-bottom: 0;
+}
+
+.blockquote-footer {
+  margin-top: -1rem;
+  margin-bottom: 1rem;
+  font-size: 0.875em;
+  color: #6c757d;
+}
+.blockquote-footer::before {
+  content: "— ";
+}
 
 
 
@@ -186,7 +240,7 @@ input
 }
 
 .col {
-  flex: 100%;
+  flex: 1 0 0%;
 }
 
 
@@ -209,7 +263,7 @@ input
 }
 @media (min-width: 992px) {
   .col-lg {
-    flex: 100%;
+    flex: 1 0 0%;
   }
   
 
@@ -220,9 +274,6 @@ input
  .col-lg-8 {
     flex: 0 0 auto;
     width: 66.66666667%;
-   display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;
   }
  .col-lg-10 {
     flex: 0 0 auto;
@@ -233,7 +284,7 @@ input
 
 @media (min-width: 1200px) {
   .col-xl {
-    flex: 100%;
+    flex: 1 0 0%;
   }
 }
 
